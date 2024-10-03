@@ -1,0 +1,22 @@
+import { createStackNavigator } from '@react-navigation/stack';
+import { LoadingScreen } from '../screens/loading/LoadingScreen';
+import { MapScreen } from '../screens/maps/MapScreen';
+import { PermissionScreen } from '../screens/permissions/PermissionScreen';
+
+export type RootStackParams = {
+  LoadingScreen: undefined;
+  MapScreen: undefined;
+  PermissionScreen: undefined;
+}
+
+const Stack = createStackNavigator<RootStackParams>();
+
+export const StackNavigator = () => {
+  return (
+    <Stack.Navigator>
+      <Stack.Screen name="LoadingScreen" component={LoadingScreen} />
+      <Stack.Screen name="MapScreen" component={MapScreen} />
+      <Stack.Screen name="PermissionScreen" component={PermissionScreen} />
+    </Stack.Navigator>
+  );
+}
