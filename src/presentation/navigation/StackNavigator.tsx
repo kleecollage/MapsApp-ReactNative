@@ -13,7 +13,14 @@ const Stack = createStackNavigator<RootStackParams>();
 
 export const StackNavigator = () => {
   return (
-    <Stack.Navigator>
+    <Stack.Navigator
+      initialRouteName='LoadingScreen'
+      screenOptions={{
+        headerShown: false,
+        cardStyle: {
+          backgroundColor: 'white',
+        }
+    }}>
       <Stack.Screen name="LoadingScreen" component={LoadingScreen} />
       <Stack.Screen name="MapScreen" component={MapScreen} />
       <Stack.Screen name="PermissionScreen" component={PermissionScreen} />
