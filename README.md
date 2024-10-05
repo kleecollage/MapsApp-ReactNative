@@ -1,3 +1,5 @@
+>**NOTE**: THE GOOGLE MAPS API KEY GOOGLE ARE DISABLE. To enable go to android/app/src/main/AndroidManifest.xml  
+
 This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
 
 # Getting Started
